@@ -1,0 +1,13 @@
+**Rating**: Overweight
+
+**Executive Summary**: Move CRSR to Overweight, but do not chase the post-earnings close near $7.88. Build exposure in stages: initiate a 25%–33% starter only on an orderly pullback/hold around $7.05–$7.20, or add later on confirmed continuation above $8.25. Treat a decisive close below the 200-day area near $6.89 as a warning to reduce exposure, and reassess/exit more aggressively if CRSR breaks below $6.50–$6.60; upside targets are $8.40–$8.60 first and roughly $9.00 over a 3–6 month horizon.
+
+**Investment Thesis**: CRSR warrants increased exposure because the bull case is supported by a genuine operating inflection rather than only chart momentum. The analysts highlighted Q1 gross margin of about 32.7%, up from 27.7% a year ago, operating income swinging to $13.8 million from a loss, net income improving to $12.8 million from a $10.5 million loss, free cash flow of $26.1 million, lower inventory, rising cash, lower debt, and net debt near only $1.7 million. That combination suggests CRSR is improving mix, pricing discipline, cost structure, and working capital before a full revenue recovery has appeared; at roughly 10x forward earnings and 1.33x book, the stock is not pricing in a fully repaired business if margins remain near 30% and revenue stabilizes.
+
+However, the conservative and neutral analysts are right that this is not a clean full-size Buy at the current print. Revenue was still down 4.1% year over year, operating margin was only 3.9%, and some free cash flow improvement may reflect inventory release that cannot repeat indefinitely. Technically, CRSR’s breakout is credible—closing at $7.88 on 3.99 million shares above the 10 EMA, 50 SMA, VWMA, and 200 SMA—but the setup is stretched, with RSI near 79, price roughly 11% above the 10 EMA, and a $1.27 daily range versus ATR of about $0.36. That makes execution central to the trade: buying near $7.05–$7.20 offers favorable asymmetry against the 200-day area near $6.89, while buying aggressively near $7.88 offers poor near-term reward/risk into $8.25 and $8.40–$8.60 resistance.
+
+The final decision is therefore Overweight rather than outright Buy: CRSR’s turnaround evidence is strong enough to justify participation, but the stock is too extended and the revenue recovery too incomplete to justify chasing or immediately building a full position. Add only if support holds constructively or if CRSR closes above $8.25 with convincing volume, limited fade, and preferably a successful retest. If CRSR spikes directly into $8.40–$8.60 while still overbought, tighten risk rather than add aggressively.
+
+**Price Target**: 9.0
+
+**Time Horizon**: 3-6 months

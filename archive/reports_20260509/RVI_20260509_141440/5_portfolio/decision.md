@@ -1,0 +1,9 @@
+**Rating**: Underweight
+
+**Executive Summary**: For RVI, execute a sell-into-strength trim rather than a full liquidation: reduce exposure to roughly 25%–35% of normal allocation, with a maximum near 40% only if the position is small and the mandate requires momentum participation. Do not add fresh capital at $39–$41; treat a close below $38.41 as an early warning and a decisive break below $36.00 as the hard risk line for further reduction or exit. Reassess only after either a clean hold above $40.85–$41.00 or an orderly pullback that stabilizes, with a 1–3 month tactical horizon.
+
+**Investment Thesis**: The debate strongly supports reducing RVI exposure because the recent price action is powerful but overextended and fundamentally underverified. Bulls can point to a real breakout: RVI hit a new 52-week high at $40.85, closed at $39.13 after a 14.2% daily gain, traded 1.047 million shares, and showed positive MACD/momentum. However, the risk analysts consistently emphasized that this strength comes with poor underwriting support: there is no available NAV, holdings detail, financial statements, fee structure, distribution data, or visible company-specific catalyst. Technically, RVI is stretched with RSI near 72, a close above the upper Bollinger Band around $38.41, price roughly 18% above the 10 EMA near $33.17, and meaningful downside to $36.00–$36.50 or even the low-$33 area if momentum cools. The portfolio decision therefore should not be a passive Hold and should not chase fresh capital; it should monetize the liquidity event while retaining only a small residual position for upside optionality. A break and sustained hold above $40.85–$41.00 could justify reassessment, but not an immediate rebuild without orderly follow-through. Conversely, a close back below $38.41 should trigger another trim, and a decisive loss of $36.00 should move the remaining position toward exit.
+
+**Price Target**: 44.5
+
+**Time Horizon**: 1-3 months

@@ -1,0 +1,184 @@
+#!/usr/bin/env bash
+# tradingagents-bg — launch a headless tradingagents run for a single ticker.
+#
+# Two modes:
+#   default       Detached background process via nohup + caffeinate. Plain
+#                 text log, ideal for scheduled / fire-and-forget runs.
+#   --watch       Spawn a tmux session running the rich CLI UI; auto-attach
+#                 if stdout is a TTY, otherwise print the attach command.
+#
+# Usage:
+#   tradingagents-bg <TICKER> [YYYY-MM-DD] [--watch] [--force]
+#
+# Defaults: today's date, refuses to launch if a run for this ticker is
+# already active (use --force to override). The runner script always uses
+# --checkpoint, so a crash can be resumed by re-invoking the wrapper.
+#
+# Output (default mode):
+#   PID file:       ~/.tradingagents/run_state/<TICKER>.pid
+#   log (stdout):   ~/.tradingagents/logs/<TICKER>/<DATE>/headless.log
+#   report dir:     <repo>/reports/<TICKER>_<TIMESTAMP>/
+#
+# Output (--watch mode):
+#   tmux session:   ta-<ticker-lower>     (attach with: tmux attach -t ...)
+#   log:            still written to ~/.tradingagents/logs/... by the runner
+#   report dir:     <repo>/reports/<TICKER>_<TIMESTAMP>/
+
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PYTHON_BIN="/Users/bytedance/miniconda3/envs/tradingagents/bin/python3.13"
+RUNNER="${REPO_ROOT}/scripts/run_ticker.py"
+RUNNER_UI="${REPO_ROOT}/scripts/run_ticker_ui.py"
+
+STATE_DIR="${HOME}/.tradingagents/run_state"
+LOG_BASE="${HOME}/.tradingagents/logs"
+mkdir -p "${STATE_DIR}" "${LOG_BASE}"
+
+usage() {
+    cat <<EOF
+Usage: $(basename "$0") <TICKER> [YYYY-MM-DD] [--watch] [--force]
+
+Launches a tradingagents run for a single ticker.
+
+  <TICKER>       Required. Ticker symbol (e.g. RVI, AAPL).
+  [DATE]         Optional. Analysis date, ISO format. Defaults to today.
+  --watch        Spawn a tmux session with the rich Live UI and auto-attach
+                 (if a TTY is available). The run keeps going if you detach.
+  --force        Start even if an existing run for this ticker appears
+                 active. Does NOT kill the prior run.
+
+Examples:
+  $(basename "$0") RVI
+  $(basename "$0") AAPL 2026-05-09
+  $(basename "$0") RVI --watch
+  $(basename "$0") RVI --watch --force
+EOF
+}
+
+if [[ $# -lt 1 ]] || [[ "$1" == "-h" ]] || [[ "$1" == "--help" ]]; then
+    usage
+    exit $([[ $# -lt 1 ]] && echo 2 || echo 0)
+fi
+
+TICKER="$(echo "$1" | tr '[:lower:]' '[:upper:]')"
+TICKER_LOWER="$(echo "$1" | tr '[:upper:]' '[:lower:]')"
+SESSION="ta-${TICKER_LOWER}"
+shift
+
+DATE=""
+FORCE=0
+WATCH=0
+for arg in "$@"; do
+    case "$arg" in
+        --force) FORCE=1 ;;
+        --watch) WATCH=1 ;;
+        *)
+            if [[ -z "${DATE}" ]] && [[ "$arg" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+                DATE="$arg"
+            else
+                echo "Unknown argument: $arg" >&2
+                usage
+                exit 2
+            fi
+            ;;
+    esac
+done
+
+if [[ -z "${DATE}" ]]; then
+    DATE="$(date +%Y-%m-%d)"
+fi
+
+PID_FILE="${STATE_DIR}/${TICKER}.pid"
+
+# Unified "already running" check — looks at both the headless PID file and
+# the tmux session, since either mode is a real run for this ticker.
+already_running=0
+existing_what=""
+if [[ -f "${PID_FILE}" ]]; then
+    EXISTING_PID="$(cat "${PID_FILE}" 2>/dev/null || true)"
+    if [[ -n "${EXISTING_PID}" ]] && kill -0 "${EXISTING_PID}" 2>/dev/null; then
+        already_running=1
+        existing_what="headless run (PID ${EXISTING_PID})"
+    else
+        # Stale PID file
+        rm -f "${PID_FILE}"
+    fi
+fi
+if tmux has-session -t "${SESSION}" 2>/dev/null; then
+    already_running=1
+    existing_what="${existing_what:+${existing_what} and }tmux session '${SESSION}'"
+fi
+
+if [[ "${already_running}" -eq 1 ]] && [[ "${FORCE}" -eq 0 ]]; then
+    echo "Refusing to start: a run for ${TICKER} is active — ${existing_what}."
+    if tmux has-session -t "${SESSION}" 2>/dev/null; then
+        echo "  Attach:   tmux attach -t ${SESSION}"
+    fi
+    EXISTING_LOG="$(find "${LOG_BASE}/${TICKER}" -name 'headless.log' -print 2>/dev/null | head -1 || true)"
+    if [[ -n "${EXISTING_LOG}" ]]; then
+        echo "  Log:      ${EXISTING_LOG}"
+    fi
+    echo "  Override: $(basename "$0") ${TICKER} ${DATE}$([[ ${WATCH} -eq 1 ]] && echo " --watch") --force"
+    exit 1
+fi
+
+if [[ "${WATCH}" -eq 1 ]]; then
+    # ────────────────────────────────────────────────────────────────────
+    # Watch mode: spawn tmux session with the rich CLI UI, auto-attach.
+    # ────────────────────────────────────────────────────────────────────
+
+    # If --force and the session exists, kill it first to start clean.
+    if [[ "${FORCE}" -eq 1 ]] && tmux has-session -t "${SESSION}" 2>/dev/null; then
+        tmux kill-session -t "${SESSION}"
+    fi
+
+    # Build the command that will run inside the tmux session. caffeinate
+    # prevents sleep; the UI runner uses the rich Live UI from cli.main.
+    CMD="caffeinate -is \"${PYTHON_BIN}\" \"${RUNNER_UI}\" \"${TICKER}\" \"${DATE}\""
+
+    # Create a detached session with the default shell first, then send the
+    # command into it. This keeps the session alive after the run finishes
+    # (or crashes) so the user can still see the final UI state on attach.
+    tmux new-session -d -s "${SESSION}" -c "${REPO_ROOT}"
+    tmux send-keys -t "${SESSION}" "${CMD}" Enter
+
+    echo "Started tradingagents (watch mode) for ${TICKER} on ${DATE}"
+    echo "  Session:  ${SESSION}"
+    echo "  Attach:   tmux attach -t ${SESSION}"
+    echo "  Report:   ${REPO_ROOT}/reports/${TICKER}_<timestamp>/ (created on success)"
+
+    # Auto-attach if we have a TTY (interactive terminal). When invoked from
+    # a non-interactive context (Claude Code's Bash tool, cron, etc.), just
+    # print the command and exit so we don't hang the parent.
+    if [[ -t 0 ]] && [[ -t 1 ]]; then
+        echo ""
+        echo "Attaching now (Ctrl+B then D to detach)..."
+        exec tmux attach -t "${SESSION}"
+    fi
+
+    exit 0
+fi
+
+# ────────────────────────────────────────────────────────────────────
+# Default mode: detached headless background run via nohup + caffeinate.
+# ────────────────────────────────────────────────────────────────────
+
+LOG_DIR="${LOG_BASE}/${TICKER}/${DATE}"
+mkdir -p "${LOG_DIR}"
+LOG_FILE="${LOG_DIR}/headless.log"
+
+cd "${REPO_ROOT}"
+nohup caffeinate -is "${PYTHON_BIN}" "${RUNNER}" "${TICKER}" "${DATE}" \
+    >> "${LOG_FILE}" 2>&1 &
+RUN_PID=$!
+disown $RUN_PID 2>/dev/null || true
+
+echo "${RUN_PID}" > "${PID_FILE}"
+
+echo "Started tradingagents run for ${TICKER} on ${DATE}"
+echo "  PID:       ${RUN_PID}"
+echo "  PID file:  ${PID_FILE}"
+echo "  Log:       ${LOG_FILE}"
+echo "  Tail with: tail -f ${LOG_FILE}"
+echo "  Report:    ${REPO_ROOT}/reports/${TICKER}_<timestamp>/ (created on success)"

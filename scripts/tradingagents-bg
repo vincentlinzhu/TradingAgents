@@ -27,7 +27,11 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-PYTHON_BIN="/Users/bytedance/miniconda3/envs/tradingagents/bin/python3.13"
+# Override per-machine via $TRADINGAGENTS_PYTHON if you don't want to edit this file.
+PYTHON_BIN="${TRADINGAGENTS_PYTHON:-/opt/tiger/miniconda3/envs/tradingagents/bin/python3.13}"
+# `caffeinate` is macOS-only. On Linux there's nothing equivalent to do, so we
+# just prepend an empty string. On a Mac, set CAFFEINATE="caffeinate -is".
+CAFFEINATE="${CAFFEINATE:-}"
 RUNNER="${REPO_ROOT}/scripts/run_ticker.py"
 RUNNER_UI="${REPO_ROOT}/scripts/run_ticker_ui.py"
 
@@ -133,9 +137,9 @@ if [[ "${WATCH}" -eq 1 ]]; then
         tmux kill-session -t "${SESSION}"
     fi
 
-    # Build the command that will run inside the tmux session. caffeinate
-    # prevents sleep; the UI runner uses the rich Live UI from cli.main.
-    CMD="caffeinate -is \"${PYTHON_BIN}\" \"${RUNNER_UI}\" \"${TICKER}\" \"${DATE}\""
+    # Build the command that will run inside the tmux session. The optional
+    # $CAFFEINATE prefix prevents Mac sleep; on Linux it's empty.
+    CMD="${CAFFEINATE} \"${PYTHON_BIN}\" \"${RUNNER_UI}\" \"${TICKER}\" \"${DATE}\""
 
     # Create a detached session with the default shell first, then send the
     # command into it. This keeps the session alive after the run finishes
@@ -169,7 +173,7 @@ mkdir -p "${LOG_DIR}"
 LOG_FILE="${LOG_DIR}/headless.log"
 
 cd "${REPO_ROOT}"
-nohup caffeinate -is "${PYTHON_BIN}" "${RUNNER}" "${TICKER}" "${DATE}" \
+nohup ${CAFFEINATE} "${PYTHON_BIN}" "${RUNNER}" "${TICKER}" "${DATE}" \
     >> "${LOG_FILE}" 2>&1 &
 RUN_PID=$!
 disown $RUN_PID 2>/dev/null || true

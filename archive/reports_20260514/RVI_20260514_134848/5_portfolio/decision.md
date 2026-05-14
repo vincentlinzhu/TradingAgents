@@ -1,0 +1,9 @@
+**Rating**: Underweight
+
+**Executive Summary**: Underweight RVI: sell/trim immediately into available liquidity and reduce exposure to a small speculative residual rather than adding at current levels. Default residual sizing should be about 20%–35% of prior intended exposure, lower for conservative mandates; cut further on a decisive loss of $57–$58 and exit any stub on a break below $47.25. Reassess only if RVI stabilizes and reclaims $65 on strong volume, but do not rebuild size without NAV, holdings, fee, leverage, or portfolio disclosure.
+
+**Investment Thesis**: The risk debate strongly supports de-risking RVI after a parabolic advance from $24.43 to a $77.39 high followed by a 22% one-day reversal to $57.27 on nearly 4 million shares. The technical profile has shifted from momentum to instability: RSI above 90, a $47.25–$65.00 intraday range, and a close near the prior Bollinger upper-band pivot around $57.57 create immediate air-pocket risk toward $47.25, $44.85–$45, and potentially the mid-$30s. Fundamentally, the bull case that RVI may be a Robinhood/private-market access vehicle has optionality, but it is not currently underwritable because the core fund-vehicle valuation inputs are missing: NAV, holdings, leverage, fees, portfolio marks, liquidity terms, and financial statements. The analysts also flagged weak RVI-specific catalyst evidence and possible Robinhood/HOOD news-feed contamination, meaning the recent repricing may rest more on narrative and perceived linkage than verifiable value. Therefore, passive Hold is too complacent, but a full thesis-ending liquidation is not mandatory for mandates that can tolerate a tightly ring-fenced speculative stub. The portfolio decision is to materially reduce RVI now, preserve limited upside only in small size, avoid shorting, and require both technical stabilization and fundamental transparency before rebuilding exposure.
+
+**Price Target**: 47.25
+
+**Time Horizon**: 1-3 months

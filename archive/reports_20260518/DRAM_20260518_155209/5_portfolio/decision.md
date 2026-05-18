@@ -1,0 +1,9 @@
+**Rating**: Underweight
+
+**Executive Summary**: Move DRAM to Underweight by trimming into strength, especially on rebounds toward 51–53, and keep only a modest satellite allocation if strategic AI-memory exposure is required. Do not initiate new DRAM exposure below 53.15; a decisive close below 48 should trigger further reduction or hedging, with downside risk toward 46.35 and then roughly 43. The recommended horizon is tactical, centered on the next several weeks and the Nvidia/HBM catalyst window.
+
+**Investment Thesis**: The final decision is to reduce DRAM exposure rather than fully exit or press an aggressive short. The analysts broadly agree that the long-term AI/HBM memory thesis remains valid: HBM scarcity, hyperscaler AI capex, and exposure to Samsung, SK Hynix, and Micron continue to support the structural story. However, the near-term risk/reward has deteriorated after DRAM reportedly rose 85%–96% in roughly six weeks, attracted extreme ETF flows, reached around 39x trailing earnings, and became highly concentrated, with about 73% in three memory suppliers. The technical evidence supports de-risking: the May 18 session opened near 53.14, failed at 53.15, fell to 48.01, and closed at 49.32, below both the 10-day EMA near 49.82 and VWMA near 49.52. Momentum is also fading, with RSI cooling from the 80s to 66.36, the MACD histogram falling from 1.36 to 0.71, and ATR expanding to nearly 2.97. The Aggressive Analyst is correct that holding full exposure risks being late to a crowded unwind, while the Conservative and Neutral Analysts are correct that the right implementation is capital preservation, not a large speculative short ahead of Nvidia earnings. Therefore, DRAM should be trimmed below target weight now, with 48 as the key downside trigger and 53.15–56.38 as the upside zone needed to invalidate the tactical underweight stance.
+
+**Price Target**: 43.0
+
+**Time Horizon**: 4-8 weeks

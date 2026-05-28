@@ -1,0 +1,13 @@
+**Rating**: Hold
+
+**Executive Summary**: HOLD DRAM as an active, risk-controlled core position rather than adding after the vertical move. Keep exposure at target or slightly below target risk, trim any allocation that has become oversized from the rally or higher ATR, and use $57 as the key tactical de-risking level while recognizing Korea-linked gap risk could cause execution below that point. Do not add at $60–$62; consider only small additions on a decisive high-volume close above $62.68 with follow-through, or on an orderly pullback toward $57, $54–$55.50, or ideally $52–$53.
+
+**Investment Thesis**: The analysts broadly agree that DRAM remains one of the cleanest and most liquid vehicles for the AI-memory theme, with HBM, advanced DRAM, NAND, storage, and memory bandwidth increasingly viewed as critical AI infrastructure bottlenecks. The aggressive case is supported by powerful evidence: volume expanded from roughly 2.5 million shares in early April to more than 41–45 million shares on May 26–27, reported AUM is around $10.38 billion, and single-day inflows exceeded $1 billion, showing strong sponsorship and investor demand for a packaged AI-memory ETF. MACD remains positive, price is still near highs, and a confirmed breakout above $62.68 could open upside toward $65 and potentially $68–$70.
+
+However, the conservative and neutral analysts carried the risk/reward argument. DRAM has already rallied roughly 119% from early April and more than 50% in May, leaving it about 14.8% above its 10-day EMA and roughly 44.6% above its 50-day SMA. RSI remains overbought near 73, ATR has expanded sharply to about $3.44, and DRAM already tested $62.68 intraday but closed at $60.73, showing hesitation at resistance after a very steep move. From current levels, upside to the first target near $65 is not compelling relative to a normal pullback to $57, $54–$55.50, or the $52–$53 VWMA/10 EMA zone.
+
+The final decision is therefore HOLD, not Buy or Overweight, because the long-term AI-memory thesis and flow backdrop justify maintaining participation, but the current price does not offer enough margin of safety for aggressive fresh capital. It is also not Underweight or Sell because there is no confirmed breakdown, flows remain supportive, and DRAM could extend if $62.68 is cleared decisively. The correct portfolio action is to preserve a right-sized core, trim only excess risk, monitor ETF flows and Korean memory names closely, and let either a confirmed breakout or a healthier pullback dictate the next move.
+
+**Price Target**: 68.0
+
+**Time Horizon**: 1-3 months

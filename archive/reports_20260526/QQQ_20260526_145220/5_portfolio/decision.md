@@ -1,0 +1,13 @@
+**Rating**: Hold
+
+**Executive Summary**: Maintain a target/core allocation in QQQ and do not add fresh capital at 730+ unless there is confirmed breakout follow-through. Rebalance or hedge only if QQQ or overlapping AI/mega-cap tech/semiconductor exposure is above mandate; use 719–720 as the first diagnostic risk zone and a decisive close below 708 as the stop/reduction trigger. The recommended horizon is tactical-to-intermediate, with reassessment over the next 1–3 months as price either consolidates, breaks out, or loses short-term momentum.
+
+**Investment Thesis**: The final decision on QQQ is Hold because the analysts agree the ETF remains a high-quality leadership vehicle, but the current entry point offers limited margin of safety. The bullish evidence is strong: QQQ closed around 730.28 near its 52-week high of 731.17, remains above the 10 EMA near 708, the 50-day near 642, and the 200-day near 614, and continues to benefit from AI, semiconductor, memory, cloud, data-center, and mega-cap platform leadership. ETF inflows, risk-on sentiment, and improved macro appetite also support maintaining exposure rather than selling into strength.
+
+However, the conservative and neutral analysts made the stronger argument against adding aggressively. QQQ is overbought with RSI around 71 after prior readings in the 80s, trades roughly 13.7% above the 50-day and 19% above the 200-day, carries a demanding trailing P/E near 35.6, and offers only a 0.42% dividend yield. The upside references are relatively close—737–738 near the upper Bollinger area and 750 as a psychological continuation level—while downside to 719–720, 708–710, or 695–700 could occur without breaking the long-term uptrend. This creates an unfavorable risk/reward for new capital at current levels.
+
+The correct implementation is a conditional core Hold. Existing QQQ exposure should be maintained if it is properly sized because there is no confirmed technical breakdown and selling outright would risk abandoning a dominant trend too early. But the portfolio should not chase a marginal new high above 731–732; any breakout add should be small, risk-defined, and supported by a close above that zone, follow-through, semiconductor and mega-cap confirmation, and no immediate rejection near 737–738. If QQQ pulls back calmly toward 719–720, that is a diagnostic zone rather than an automatic sell trigger; if it breaks that level sharply on weak breadth or chip weakness, risk controls should tighten. A decisive close below 708 would signal short-term momentum failure and should trigger exposure reduction or hedging.
+
+**Price Target**: 750.0
+
+**Time Horizon**: 1-3 months

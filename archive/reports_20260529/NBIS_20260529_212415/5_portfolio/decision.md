@@ -1,0 +1,11 @@
+**Rating**: Overweight
+
+**Executive Summary**: Rate NBIS Overweight: participate, but do not chase a full-size Buy after the parabolic move. Initiate or add only on a defended pullback into $219–$221, or on a decisive high-volume breakout above $233.60 that holds/retests; start with roughly one-quarter to one-third of intended allocation and cap current exposure around 2%–3% of a diversified growth portfolio. Use $207–$208 as an intermediate warning zone and $195–$200 as the major invalidation/reduction zone. Time horizon is 3–6 months, with reassessment around financing terms, capex execution, utilization, deferred revenue conversion, and operating leverage.
+
+**Investment Thesis**: NBIS deserves exposure because the bull case is unusually strong: analysts cited Q1 revenue growth of roughly 684% year over year and about 75% sequentially, gross margin near 74%, deferred revenue around $4.78B, strong liquidity, and meaningful institutional validation from Situational Awareness’s roughly 5% stake. The technical trend also remains constructive, with NBIS above the 10 EMA, VWMA, 50 SMA, and 200 SMA, positive MACD, RSI around 65–66 rather than euphoric, and elevated volume supporting the push toward $233.60. The prior cross-ticker lesson from NASA also argues against being too timid when thematic momentum, volume, and institutional flows confirm a leadership setup.
+
+However, the conservative and neutral analysts are right that NBIS is not a clean full-size Buy at any price. The stock has advanced roughly 150% in two months, trades around 67x TTM sales, remains operating-loss and free-cash-flow negative, has seen debt rise to about $9.50B, and is pursuing a $20B–$25B capex program before fully proving returns on that capital. The proposed $221 entry is a valid participation zone because $219–$221 has acted as a recent pivot, but it is still less than one ATR below the recent $231 area, so confirmation matters. The best decision is therefore to follow the Research Manager’s Overweight stance rather than the trader’s plain Buy: build exposure gradually, require either support defense or breakout confirmation, and avoid moving toward a 4%–5% position until NBIS shows better evidence on financing, utilization, margin durability, and deferred revenue conversion.
+
+**Price Target**: 260.0
+
+**Time Horizon**: 3-6 months

@@ -1,0 +1,17 @@
+**Rating**: Overweight
+
+**Executive Summary**: Move NOW to a modest Overweight, but do not approve the trader’s full 60% initial buy as written. Initiate/add 35%–40% of the intended overweight near the $111–$112 support area, add only on confirmation above $116 and $121, and complete the overweight only if NOW reclaims and holds $124–$128. Reduce risk on a decisive close below $111 and use $103 as the final tactical failure level; expected holding period is 6–12 months.
+
+**Investment Thesis**: NOW remains a high-quality enterprise software compounder, which supports accumulation rather than avoidance. The bullish evidence is substantial: revenue growth is still above 20%, Q1 revenue grew about 22.1% year over year, EBITDA grew roughly 30%, free-cash-flow generation is exceptional with Q1 FCF margin above 40% and trailing FCF margin above 30%, and the balance sheet is net cash by about $2.75 billion. The analysts also highlighted credible long-term upside from ServiceNow’s enterprise workflow position, AI Control Tower, the Cognizant integration, and EmployeeWorks traction, all of which could support deeper wallet share and eventual AI governance monetization.
+
+However, the aggressive BUY case overstates how clean the setup is. NOW is still below $116, below $121, below the $124–$128 failed-rally zone, and far below the falling 200-day average near $140–$142. The stock was sharply rejected near $135–$136 and retraced quickly toward $112, while ATR near $7.81 means the proposed $103 stop is only a little more than one day’s volatility away. That makes the trader’s proposed 60% initial allocation too large before confirmation.
+
+The conservative HOLD case is directionally too defensive because NOW is not technically broken: the $111–$112 support zone has held so far, price remains above the 50-day SMA near $99–$100, MACD remains positive, RSI has reset to the mid-50s rather than collapsing, and VWMA has improved. Waiting for a 200-day reclaim would likely surrender too much upside in a quality compounder.
+
+The right portfolio decision is therefore a moderated Overweight: participate now, but size the first tranche to reflect unresolved risks. Premium valuation remains a constraint, with trailing P/E around 68x, EV/EBITDA near 40x, EV/revenue around 8.2x, and price-to-book around 10x. Margins also slipped year over year, SBC remains meaningful at roughly 14.5% of Q1 revenue, and Q1 buybacks exceeded quarterly free cash flow. These issues do not invalidate the long-term NOW thesis, but they argue against a high-conviction Buy until margins stabilize, AI monetization becomes more measurable, and the technical trend improves.
+
+Execution plan: start with 35%–40% of the intended overweight near $112 while $111–$112 holds. Add 10%–15% on a close above $116 with improving volume, add more meaningfully on a close above $121 with stronger volume and supportive software-sector breadth, and complete the overweight only if NOW reclaims and holds $124–$128. Treat $135–$136 as the first tactical target/resistance test and $140–$142 as longer-term trend confirmation. A decisive close below $111 should trigger review and partial reduction; a close below $103 invalidates the tactical recovery setup and should lead to exiting the overweight exposure.
+
+**Price Target**: 136.0
+
+**Time Horizon**: 6-12 months

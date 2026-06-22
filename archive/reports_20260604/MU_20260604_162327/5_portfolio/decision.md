@@ -1,0 +1,13 @@
+**Rating**: Underweight
+
+**Executive Summary**: Rate MU Underweight: trim immediately to below benchmark/target weight around the $996 reference level, avoid any new long entry, and maintain only a controlled residual core for the AI/HBM thesis. Do not rely on a tight $950 stop as primary risk control; use position sizing first, then reduce further on a close below $940–950 on heavy volume, with $971.68 as the first warning level and ~$856 as the deeper reassessment zone. If MU reclaims $1,036 and then $1,080–1,090 on strong volume, pause further selling but do not aggressively rebuild until volatility cools and memory-pricing durability is clearer.
+
+**Investment Thesis**: The risk debate supports reducing MU exposure rather than exiting entirely. The bull case is real: MU reported exceptional fundamentals, including revenue of $23.86B, net income of $13.79B, operating cash flow of $11.90B, free cash flow of $5.52B, very high margins, and a balance sheet where cash plus short-term investments exceed total debt. AI/HBM demand may structurally improve Micron’s earnings power, so MU should not be treated as a broken company or abandoned outright.
+
+However, the bear/risk-management case is stronger at the current price. MU has advanced roughly 948% in a year, trades around $996 after a sharp reversal from the $1,079 area, reached an intraday low near $971.68, and did so on elevated volume around 53.66M shares. Technical risk is extreme: RSI is above 82, ATR is around 57 points, price is roughly 67% above the 50-day SMA and 182% above the 200-day SMA. The analysts broadly agreed that the $950 stop is less than one ATR away and therefore too tight to be the main defense; the position must be resized now.
+
+The valuation also depends heavily on aggressive forward assumptions. MU’s forward P/E near 9.4x looks cheap only if forward EPS around $105.95 and extraordinary margins—gross margin near 74.4% and operating margin near 67.6%—prove durable. In a memory business still exposed to DRAM/NAND pricing, customer inventories, capex cycles, and supply discipline, that is a meaningful risk, especially with warnings that memory prices may be nearing a ceiling. Retail leverage anecdotes, AI-semiconductor basket weakness after Broadcom, and rotation toward less crowded sectors add fragility. Therefore, the right decision is an Underweight stance: sell the excess now, preserve capital and optionality, but keep a modest MU core in case the HBM thesis continues to validate.
+
+**Price Target**: 856.0
+
+**Time Horizon**: 1-3 months

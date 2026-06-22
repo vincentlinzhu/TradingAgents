@@ -1,0 +1,15 @@
+**Rating**: Overweight
+
+**Executive Summary**: Rate NOW Overweight, but implement it as a staged, risk-controlled accumulation rather than an aggressive full buy. Initiate only a small starter position around the $103–$105 support area, add only on a confirmed reclaim of $113–$116, and consider building further only if NOW clears $124–$128. Treat $99–$100, near the 50-day SMA, as the key risk-control zone; a decisive close below it should pause additions and trigger a trim or exit of the tactical tranche. Time horizon is 3–6 months, with reassessment at each technical level and around macro/software-sector conditions.
+
+**Investment Thesis**: The final decision balances the Research Manager’s Overweight recommendation and the trader’s BUY proposal against the risk analysts’ cautions. The bull case is strong: NOW is still growing revenue about 22% year over year, has roughly $5.11B of trailing free cash flow, mid-30% FCF margins, about $5.18B of cash and short-term investments against $2.43B of debt, and around $8.03B of current deferred revenue that supports revenue visibility. The AI/workflow thesis is also credible, especially given the ServiceNow–NICE alliance, because NOW’s platform is tied to real enterprise workflow execution rather than generic AI branding.
+
+However, the Conservative and Neutral Analysts are right that this is not a clean technical setup. NOW fell roughly 21% from $135.86 to $106.97 in six sessions, remains below the 10-day EMA near $113.33 and VWMA near $115.80, has MACD slightly below signal, and is far below the 200-day SMA near $139.52. The proposed $103 entry with a $99 stop also sits inside a volatile regime, with ATR around $7.80, so the initial position must be smaller than a normal tranche or managed using a decisive close below $99–$100 rather than a simple intraday stop.
+
+Valuation is acceptable but not cheap. Around 21x trailing free cash flow and roughly 21x forward earnings is defensible for a 20%+ revenue grower with elite cash generation and net cash, but the bear concerns around 63x trailing GAAP earnings, 37x EV/EBITDA, slower GAAP EPS growth, gross margin compression, high SBC, buybacks used partly to offset dilution, and acquisition/goodwill risk are real. Those risks argue against a high-conviction Buy today, but not against selective accumulation.
+
+Therefore, the best portfolio decision is Overweight with conditions: participate near support because the long-term business quality, FCF profile, and AI workflow optionality justify exposure, but do not build aggressively until the chart earns more capital. Add above $113–$116 only if volume and momentum improve, add again above $124–$128 if breakdown supply is absorbed, and reassess near $135–$140 where the 200-day SMA and major resistance sit.
+
+**Price Target**: 128.0
+
+**Time Horizon**: 3-6 months
